@@ -1,10 +1,14 @@
 import { Spinner } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../css/Loading.css"
+
 
 function Loading() {
   return (
-    <div>
-      <Spinner color="secondary" />
+    <div className="divFather">
+      <div className="divSon">
+        <Spinner color="secondary" />
+      </div>
     </div>
   );
 }

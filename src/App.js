@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css"
 import { useState } from "react";
 import Loading from "./components/Loading";
 
@@ -16,7 +17,7 @@ function App() {
     return <Loading />;
   } else {
     return (
-      <div>
+      <div className="center">
         <br />
         <br />
         <button className="btn btn-primary" onClick={() => changeState()}>
